@@ -1,22 +1,26 @@
 #!/usr/bin/env python
 # encoding: utf-8
-__author__ = 'Kxrr'
+__author__ = 'MX'
 
-import re
+import os,re
 
-with open('0004.txt', 'r') as f:
-    dictResult = {}
+def findString(filePath, regex):
+	dictResult = {}
+	fileObj = open(filePath, 'r')
 
-    # Find the letters each line
-    for line in f.readlines():
-        listMatch = re.findall('[a-zA-Z]+', line.lower()) # remember to lower the letters
+	for line in fileObj.readlines():
+		#获取当前行的所有单词
+		listMatch = re.findall('[a-zA-Z]+', line.lower())
+		#每个单词出现的次数，存入字典dictResult
+		for eachLetter in listMatch:
+			#存入字典，如果单词已经出现过，则在原基础上+1
+			dictResult[eachLetter] = dictResult.get(eachLetter, 0) + 1
+		#print(dictResult)
 
-    # Count
-        for eachLetter in listMatch:
-            eachLetterCount = len(re.findall(eachLetter, line.lower()))
-            dictResult[eachLetter] = dictResult.get(eachLetter, 0) + eachLetterCount
+	#根据单词首字母，对字典排序
+	result = sorted(dictResult.items(),key = lambda x:x[0][0])
+	for each in result:
+		print(each)
+	
+findString("0004.txt",'William')
 
-    # Sort the result
-    result = sorted(dictResult.items(), key=lambda d: d[1], reverse=True)
-    for each in result:
-        print each
