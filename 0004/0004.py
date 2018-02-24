@@ -1,10 +1,9 @@
-#!/usr/bin/env python
 # encoding: utf-8
 __author__ = 'MX'
 
 import os,re
 
-def findString(filePath, regex):
+def findString(filePath):
 	dictResult = {}
 	fileObj = open(filePath, 'r')
 
@@ -21,6 +20,5 @@ def findString(filePath, regex):
 	result = sorted(dictResult.items(),key = lambda x:x[0][0])
 	for each in result:
 		print(each)
-	
-findString("0004.txt",'William')
 
+findString("0004.txt")
