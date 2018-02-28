@@ -21,4 +21,4 @@ def findString(filePath):
 	for each in result:
 		print(each)
 
-findString("0004.txt")
+findString("./0004.txt")
