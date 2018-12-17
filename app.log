@@ -1,0 +1,12 @@
+[2018-07-18 07:18:46.614777] INFO: script_log: info msg1000013333
+[2018-07-18 07:18:46.614777] DEBUG: script_log: debug msg
+[2018-07-18 07:18:46.614777] WARNING: script_log: warning msg
+[2018-07-18 07:18:46.614777] ERROR: script_log: error msg
+[2018-07-18 07:18:54.117206] INFO: script_log: info msg1000013333
+[2018-07-18 07:18:54.117206] DEBUG: script_log: debug msg
+[2018-07-18 07:18:54.118206] WARNING: script_log: warning msg
+[2018-07-18 07:18:54.118206] ERROR: script_log: error msg
+[2018-07-18 07:37:05.217613] INFO: script_log: info msg1000013333
+[2018-07-18 07:37:05.218613] DEBUG: script_log: debug msg
+[2018-07-18 07:37:05.218613] WARNING: script_log: warning msg
+[2018-07-18 07:37:05.218613] ERROR: script_log: error msg
