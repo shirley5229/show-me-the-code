@@ -19,5 +19,5 @@ def rowCount(path):
 				COUNT=COUNT+len(code)
 	return COUNT
 
-count1=rowCount(r"D:\Git\pyrequest\tms3_rest_test")
+count1=rowCount(r"D:\Git\senyint_tms3_Operation(expire)")
 print("代码总行数："+str(count1))

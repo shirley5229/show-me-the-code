@@ -13,4 +13,7 @@ def generate(count, length):
         print(Re)
 
 if __name__ == "__main__":
-    generate(200, 20)
+    generate(10, 20)
+    supply=1
+    for n in range(supply):
+        print('fjiiii'+str(n))

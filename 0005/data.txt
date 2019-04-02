@@ -1,4 +1,0 @@
-Name: ada	Phone: 13888888888
-Name: bill	Phone: 13999999999
-Name: lily	Phone: 18912345678
-Name: mx	Phone: 1509999888
